@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_darbas_4.Controller">
+   <children>
+      <Button fx:id="markButton" layoutX="247.0" layoutY="187.0" mnemonicParsing="false" onAction="#markAttendanceMode" text="Mark attendance" />
+      <Button fx:id="editGroupButton" layoutX="233.0" layoutY="228.0" mnemonicParsing="false" onAction="#editGroupMode" text="Edit groups / students" />
+      <Button fx:id="dataButton" layoutX="238.0" layoutY="270.0" mnemonicParsing="false" onAction="#dataMode" text="Import / export data" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="496.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_darbas_4.EditController">
+   <children>
+      <Label layoutX="39.0" layoutY="14.0" text="Add student" />
+      <TextField fx:id="nameField" layoutX="14.0" layoutY="42.0" prefHeight="25.0" prefWidth="115.0" promptText="Name" />
+      <TextField fx:id="surnameField" layoutX="14.0" layoutY="75.0" prefHeight="25.0" prefWidth="115.0" promptText="Surname" />
+      <TextField fx:id="idField" layoutX="14.0" layoutY="107.0" prefHeight="25.0" prefWidth="115.0" promptText="ID" />
+      <ChoiceBox fx:id="groupBox" layoutX="14.0" layoutY="141.0" prefHeight="25.0" prefWidth="115.0" />
+      <Button fx:id="addStudentButton" layoutX="31.0" layoutY="174.0" mnemonicParsing="false" onAction="#addStudent" text="Add student" />
+      <Label fx:id="addStudentLabel" layoutX="24.0" layoutY="210.0" prefHeight="17.0" prefWidth="96.0" textAlignment="CENTER" />
+      <Line endX="10.666656494140625" endY="153.99998474121094" layoutX="140.0" layoutY="42.0" startX="10.666656494140625" startY="-9.5367431640625E-6" />
+      <Label layoutX="182.0" layoutY="14.0" text="Add group" />
+      <TextField fx:id="groupNumberField" layoutX="163.0" layoutY="78.0" prefHeight="25.0" prefWidth="96.0" promptText="Group number" />
+      <Button fx:id="addGroupButton" layoutX="174.0" layoutY="111.0" mnemonicParsing="false" onAction="#addGroup" text="Add group" />
+      <Label fx:id="addGroupLabel" layoutX="163.0" layoutY="145.0" prefHeight="17.0" prefWidth="96.0" textAlignment="CENTER" />
+      <Line endX="10.666656494140625" endY="153.99998474121094" layoutX="261.0" layoutY="42.0" startX="10.666656494140625" startY="-9.5367431640625E-6" />
+      <Button fx:id="backButton" layoutX="691.0" layoutY="10.0" mnemonicParsing="false" onAction="#returnToMenu" text="Back" />
+      <TableView fx:id="table" layoutX="14.0" layoutY="274.0" onMouseClicked="#loadEditData" prefHeight="208.0" prefWidth="489.0">
+         <columns>
+            <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="145.99993896484375" text="Name" />
+            <TableColumn fx:id="surnameColumn" prefWidth="182.66668701171875" text="Surname" />
+            <TableColumn fx:id="groupColumn" prefWidth="84.6666259765625" text="Group" />
+         </columns>
+      </TableView>
+      <TextField fx:id="editNameField" layoutX="562.0" layoutY="41.0" prefHeight="25.0" prefWidth="115.0" promptText="Name" />
+      <TextField fx:id="editSurnameField" layoutX="561.0" layoutY="74.0" prefHeight="25.0" prefWidth="115.0" promptText="Surname" />
+      <TextField fx:id="editIdField" layoutX="561.0" layoutY="106.0" prefHeight="25.0" prefWidth="115.0" promptText="ID" />
+      <ChoiceBox fx:id="editGroupBox" layoutX="561.0" layoutY="140.0" prefHeight="25.0" prefWidth="115.0" />
+      <Button fx:id="updateStudentButton" layoutX="454.0" layoutY="74.0" mnemonicParsing="false" onAction="#updateStudent" text="Update student" />
+      <Button fx:id="deleteStudentButton" layoutX="456.0" layoutY="107.0" mnemonicParsing="false" onAction="#deleteStudent" text="Delete student" />
+      <Label layoutX="588.0" layoutY="14.0" text="Edit student" />
+   </children>
+</AnchorPane>
